@@ -1,0 +1,26 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items :start;
+    height: 100vh;
+}
+
+.loader{
+    background-color: chocolate;
+    height:1vh;
+    width:75vw;
+    position:relative;
+    animation: loader 2s linear infinite;
+    margin-top:0px;
+    border:none
+}
+
+
+@keyframes loader{
+    0%{left:-175px}
+    20%{left:0px}
+    40%{left:200px}
+    60%{left:400px}
+    80%{left:600px}
+    100%{left:1400px}
+}

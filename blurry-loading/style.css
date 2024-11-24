@@ -1,0 +1,80 @@
+
+.image-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+img{
+    width:100%;
+    height:100%;
+    animation: blurring 5s linear infinite;
+}
+.text::before{
+    font-size: 50px;
+    color:rgb(221, 20, 20);
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation: textAnimation 4s linear infinite;
+    content: "0%";
+}
+
+@keyframes textAnimation {
+    0%{
+        content: "0%";
+        opacity: 0.7;
+    }
+    30%{
+        content:"30%";
+        opacity: 0.8;
+    }
+    60%{
+        content: "60%";
+        opacity: 0.6;
+    }
+    80%{
+        content:"80%";
+        opacity: 0.3;
+    }
+    100%{
+        content: "100%";
+        opacity: 0.8;
+    }
+}
+
+
+@keyframes blurring {
+    0%{
+        filter: blur(5px);
+       
+    }
+    
+    30%{
+        filter: blur(4px);
+        
+    }
+    60%{
+        filter:blur(3px);
+      
+    }
+    80%{
+        filter:blur(2px);
+      
+    }
+    100%{
+        filter: blur(0px);
+       
+    }
+    
+}
+
+
+
+/* @keyframes textAnimation{
+    0%{
+        content: "0%";
+    }
+    100%{content: "100%";}
+} */
+
+
